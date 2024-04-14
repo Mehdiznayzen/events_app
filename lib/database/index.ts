@@ -4,7 +4,6 @@ const Mongodb_url = process.env.MONGODB_URL;
 let isConnected = false;
 
 export const connectToDB = async () => {
-    mongoose.set('strictQuery', true)
 
     if(!Mongodb_url) return console.log('Mongodb url not found');
 
